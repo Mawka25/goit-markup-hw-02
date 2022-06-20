@@ -18,7 +18,12 @@ font-family: 'Roboto', sans-serif; */
 
   }
   body{width: 1600px;
-padding-left: 215px;}
+    padding-left: 215px;
+    background-color: var(--text-white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;}
 
    /* list_decoration */
 .list{list-style: none;}
@@ -44,13 +49,11 @@ padding-left: 215px;}
    .navigation_list,.navigation_link{display: flex;
     margin-top: 16px;
     margin-right: 50px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
     line-height: 16px;
     color: var(--text-main-color);
   }
+
+  .navigation_list .navigation_link.current{color: var(--emphasis);}
  .link{text-decoration:none;}
  .navigation_link:focus,.navigation_link:hover{color: var(--emphasis);}
 
@@ -59,15 +62,12 @@ padding-left: 215px;}
   margin-top: 32px;}
  .mail{margin-right: 50px;}
 
- .contact,.tel,.mail{font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+ .contact,.tel,.mail{
     line-height: 16px;
     color: var(--text-add-color);
     }
 
- .mail:hover,.mail:focus{color: var(--emphasis);}
+ .mail:hover,.mail:focus,.tel:focus,.tel:hover{color: var(--emphasis);}
 
 
  /* Main */
@@ -83,8 +83,6 @@ padding-left: 215px;}
 .section_one>.title_section_one{
     margin-top: 0; 
     padding: 200px 452px 40px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -101,8 +99,6 @@ padding-left: 215px;}
     background: var(--emphasis);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -125,10 +121,7 @@ padding-left: 215px;}
     justify-content: space-around;
    margin-top: 0;
    padding-top: 94px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;}
 
@@ -149,8 +142,6 @@ padding-left: 215px;}
         background-color: var(--background_secondsry);}
 
     .about_title{margin-top: 0;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -169,8 +160,6 @@ padding-left: 215px;}
     .section_four{background-color:  #F5F4FA;}
     .our_team_title{margin-top: 0;
         padding-top: 94px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -192,16 +181,13 @@ padding-left: 215px;}
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;}
-    .member_name{font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
+    .member_name{
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--text-main-color);}
-    .member_position{font-family: 'Roboto';
-        font-style: normal;
+    .member_position{
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
@@ -229,6 +215,8 @@ padding-left: 215px;}
             letter-spacing: 0.03em;
             color: var(--text-white-color);}
 
+        .adress:hover,.adress:focus{color: var(--emphasis);}
+
 
         .mail_foot,.tel_foot{margin-left:215px;
             font-family: 'Roboto';
@@ -239,6 +227,9 @@ padding-left: 215px;}
             letter-spacing: 0.03em;
             color: rgba(255, 255, 255, 0.6);
             }
+        .mail_foot:focus,.mail_foot:hover,.tel_foot:focus,.tel_foot:hover{
+            color: var(--emphasis);
+        }
              
             /* portfolio */
 
@@ -271,6 +262,8 @@ padding-left: 215px;}
                 background-color: var(--emphasis);
                 color: #FFFFFF;}
 
+        .button,.button_port{cursor: pointer;}
+
                 /* examples */
 
             .examples{ display:flex;
@@ -290,8 +283,6 @@ padding-left: 215px;}
 
             .ex_title{margin-left: 24px;
                 margin-top: 0;
-                font-family: 'Roboto';
-                font-style: normal;
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 36px;
@@ -300,8 +291,6 @@ padding-left: 215px;}
                 }
 
             .type{margin-left: 24px;
-                font-family: 'Roboto';
-                font-style: normal;
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 30px;
