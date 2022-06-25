@@ -15,15 +15,16 @@ font-family: 'Roboto', sans-serif; */
     --text-white-color:#ffffff;
     --text-with-invis:rgba(255, 255, 255, 0.6);
     --background_secondsry:#E5E5E5;
+    --button-hover-color:rgb(23, 138, 232, 0.5);
+    --portfolio-buttons:#F5F4FA;
 
   }
   body{width: 1600px;
     padding-left: 215px;
     background-color: var(--text-white-color);
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;}
+    font-size: 14px;
+    color: var(--text-add-color);}
 
    /* list_decoration */
 .list{list-style: none;}
@@ -42,14 +43,15 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     color: var(--text-main-color);}
   .logo>.Web_logo{color: var(--emphasis);}
 
    .navigation_list,.navigation_link{display: flex;
     margin-top: 16px;
     margin-right: 50px;
-    line-height: 16px;
+    line-height: 1.14;
+    font-weight: 500;
     color: var(--text-main-color);
   }
 
@@ -62,8 +64,8 @@ font-family: 'Roboto', sans-serif; */
   margin-top: 32px;}
  .mail{margin-right: 50px;}
 
- .contact,.tel,.mail{
-    line-height: 16px;
+ .contact,.tel,.mail{font-weight: 500;
+    line-height: 1.14;
     color: var(--text-add-color);
     }
 
@@ -85,7 +87,7 @@ font-family: 'Roboto', sans-serif; */
     padding: 200px 452px 40px;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -99,9 +101,10 @@ font-family: 'Roboto', sans-serif; */
     background: var(--emphasis);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--text-white-color);
@@ -109,29 +112,28 @@ font-family: 'Roboto', sans-serif; */
 }
 .button:hover,
 .button:focus{
-    background-color: rgb(23, 138, 232, 0.5);
-    color: #FFFFFF;}
+    background-color: var(--button-hover-color);
+    }
  /* sectio_two */
 
  .section_two{ height: 300px;
-    background-color:var(--background_secondsry);}
+    background-color:var(--text-white-color);}
 
  .for_list{display: flex;
     align-items: center;
     justify-content: space-around;
-   margin-top: 0;
-   padding-top: 94px;
+    margin-top: 0;
+    padding-top: 94px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;}
 
   .for_item{width: 270px;
   height: 75px;}
- .for_item h3{font-family: 'Roboto';
-    font-style: normal;
+ .for_item h3{
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-main-color);}
@@ -139,12 +141,12 @@ font-family: 'Roboto', sans-serif; */
     /* section_three */
 
     .section_three{
-        background-color: var(--background_secondsry);}
+        background-color: var(--text-white-color);}
 
     .about_title{margin-top: 0;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--text-main-color);}
@@ -157,12 +159,12 @@ font-family: 'Roboto', sans-serif; */
 
     /* section_four */
 
-    .section_four{background-color:  #F5F4FA;}
+    .section_four{background-color: var(--text-white-color);}
     .our_team_title{margin-top: 0;
         padding-top: 94px;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--text-main-color);}
@@ -181,18 +183,19 @@ font-family: 'Roboto', sans-serif; */
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;}
-    .member_name{
+    .member_name{font-weight: 500;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.18;
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--text-main-color);}
     .member_position{
         font-weight: 400;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 1.18;
         text-align: center;
-        letter-spacing: 0.03em;}
+        letter-spacing: 0.03em;
+        }
 
         /* footer */
         .footer{height: 252px;
@@ -246,21 +249,21 @@ font-family: 'Roboto', sans-serif; */
             height: 38px;
             left: 576px;
             top: 174px;
-            background: #F5F4FA;
+            background: var(--portfolio-buttons);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
             border-radius: 4px;
-            border-color: #F5F4FA;
+            border-color: var(--portfolio-buttons);
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
-            line-height: 26px;
+            line-height: 1.62;
             text-align: center;
             letter-spacing: 0.03em;}
 
             .button_port:hover,.button_port:focus{
                 background-color: var(--emphasis);
-                color: #FFFFFF;}
+                color: var(--text-white-color);}
 
         .button,.button_port{cursor: pointer;}
 
@@ -278,14 +281,14 @@ font-family: 'Roboto', sans-serif; */
                 left: 215px;
                 top: 262px;
                 
-                background: #FFFFFF;
+                background: var(--text-white-color);
                 border: 1px solid #EEEEEE;}
 
             .ex_title{margin-left: 24px;
                 margin-top: 0;
                 font-weight: 700;
                 font-size: 18px;
-                line-height: 36px;
+                line-height: 2;
                 letter-spacing: 0.06em;
                 color: var(--text-main-color);
                 }
@@ -293,6 +296,6 @@ font-family: 'Roboto', sans-serif; */
             .type{margin-left: 24px;
                 font-weight: 400;
                 font-size: 16px;
-                line-height: 30px;
+                line-height: 1.87;
                 letter-spacing: 0.03em;
                 color: var(--text-add-color);}
